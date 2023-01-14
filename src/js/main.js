@@ -1,4 +1,4 @@
-import "../css/style.css";
-import { setupCounter } from "../../counter";
+import "../css/style.scss";
+// import { setupCounter } from "../../counter";
 
-setupCounter(document.querySelector("#counter"));
+// setupCounter(document.querySelector("#counter"));
