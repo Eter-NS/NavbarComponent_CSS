@@ -14,6 +14,11 @@
           <a id="navbar__logo--image" href="#home">Logo</a>
         </figcaption>
       </figure>
+
+      <label class="navbar__menu" for="hamburgerMenu">
+        <button class="navbar__menu--button" id="hamburgerMenu"></button>
+      </label>
+
       <ul class="navbar__hoverLink">
         <li>
           <a class="navbar__hoverLink--element" href="#home">Top</a>
@@ -24,10 +29,28 @@
         <li>
           <a class="navbar__hoverLink--element" href="#contact">Contact</a>
         </li>
+
+        <li class="navbar__hoverLink--linkBio">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABCpJREFUaEO9WYFxFDEMXFdAqIB0kFBBPhUAFQQ6gAqACqADoALSwYcKCBUAHdDBMTr7bFmWbdm5j2cy8/HZklbSSvadQ2s4AEtYEH+rk0IKX9NQYFzWM7GJYeih0aCuC4xyyDZaWh9CkBqEIYS1xQMWK7EeNKGGalDMDsvJknYELEpqYXGAWxQKWWTyNR1/2QHMR7licilwRkULwEsA7wFcmp3Wza4ufb2qXM4fAO8A3Eo7UgrpafAbwPmMV2yAG2BKpfcAnmtyWxHYOoDmFZuNvVVj3sltDXtLAEloDqBnzOmfM1uTkQJA5pJ6BESFads+5uZOV0qP+xHgRTDu+wXgLYA7v98dgOUzgAvJPMlFC4zOGjXd2xwoJV6T8cJLBwccZ/PNAizos6RQZppmUw2wXztgzaYpRNLHczs76nIK3amMKueLtYmWEin72RE1blQBTOBp0cmSQl0SUy2mmswHNbqfuUdPUpKMZTTpXr0qvEjGvwJA3ZHGOYDvvlvv7O/SB05T0SCxWoU2sf/Cj7OirmnOHyq7XoDijloKVT3HSMzXzHl6blfmDQsHulXoG0ufbTGdl25Yvn1UgvAawDMAPwBQ36AUpHQ8hDSk51cd5uwCQO0DAI4s6Joi6h1fw1/NTgLxpQHCkkKNKuQlNwBE1ZoiqlSyemm2fghH+CJ3lsrlq92JSzJ1I+D5OprxsZ2dLT69nmTuSF2mqBldAKImGCNQI707Bxbiwl+FS5txt3B4EV/n5CaH/1JZEwBqKRTnBYB1noh4ZDGvOeVTOAiG+Lg3wEK8kHHO0yiZxPpAjFi41KsRV/tAGQGHA5YuAAlyw/sUwNZTtjk67RJYOZhjOKo67YvDnAOuF+U0aohA8GrhqU5KZuvbZVQJwoMBMJmUKjebr9h8ApAm82jFeefSS5qUdRGVBcADyihdgK4Uj1xjCfcLAUCx59SNrOwDyXm4w6J0WocEIKVyjS9zh7nE99V/sySmThyPCkMppJbRzmR4PMWBUKHz0uBYBPLcsPQVTp1WaUo9IjQR7UppuRNruZpFgCXbcArJ4m7sxFFl9yjh60NxAeinkOCASmLlXrEjgJLELN5ZFVI5wAE4HNtHiUkODJE4d6GeQurp1h3glgSg0XTpkY8AV5Z+axygNn8v1l9iWS8p26AyyMYqkJ7Ht9xMnZeXD1rH5W3qjH2gDaB+8LA+UZK7tzVsWQHI7XYOTCjuGaY/F+mQyg6ztZFXTKj2WmXOpoldexwl6GZEl4/GeLSw0Etl9qVIRkC3gz4x0TH4oufAXWDUhdDtjci+fmKS9abFgcLuuFlVJiZ3QdVz3R6fWfs6TrCiSuI5t43u0tvOhtMujVYOpdCoK8dM6X0i0aV5AHZNjcX8pOUFcs40XxWbCp3OsdoHC1WkMGuowg75SEhu7f0PH79xR/u/3t8AAAAASUVORK5CYII="
+              alt="Linkedin"
+            />
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABSdJREFUaEPNWYtxFEcQfRMBIgJLESBH4FME2BGAIwAiQIrAVgQ2EYAjQEQgOQJEBIgIxvV2ZnZ7ervnc4CLqboqaW+2p1/3699cwPQKAKL7VvpW7Wm/0tZgfdcWwqdj62uUaJywFyufBCDElr0WU/3Aq2+1bwJA2SwRzHyobNXXT7wwQaEpuf+z/7RuR3jAg/etng8GTD5uBTBh9VMAvwD4FcAJAP7Pz+RaTrwHwM8DgHcAPuT/h2XNeIDKvgbwUks3wa8JpGEaO0X+CeAqg+oCSQD65qe1/xi3dFvpTmakRvTI79krGcREECvYVP6tAvkpC6f775LovhUcc54D4OcA4Ce157caxF5Cj0InAbiNG8e/ZO7fdH1rbuhCvcw0LW8/IOAMkR5xPdCsheTjiyyNyjNY6d7vueiNW3HAtRV35fuWB04R8FG0PRcAjrS8Zb/VcM8BPEXADSLeAOEBiNoTZ152agAIL4HIwOX6N/NUWf5o3hc52dqrnFcA6PUSyI/y3+m5kbVaHmBefpoFLG48Qt3zbPs7h3Pa0v/kGON2eb58XokyAWRFSRcWLK46G/hIWCsYM8wo/MhFeTcIuE5BuSzNd6bOv/N3EtwHIBy2tnRTQAGossRHkfcd/ldIDgj4C7FblZl6qWiJJ4JgqmY6ficmDRbMQmG+wzjYrRaF5NTSC+BkLa8kqwEob7tCwGWjqNGD74XGLlscelantgDogyjvTaZC4f55AJ5H4Jk6bEbuCIDKhLKt/5kuNpCS88zZpZnbCp05TC08ZnCW7EJqUHZdW5IaDQ+4MVCpKLsDj2o6i1wE4MaamIVpKsUCcBUBytEr7TN1HQJQsXMHwMhUpA2LUnulF5lpCp3YQuuMRRnKAyHo4ZiiVsWM+JOGFAAUzbZ/L3I1HWlvD0B4LwZ2y8MrgHzEskfrmV5cn+5jIJlzj97I4Y/J5SoR+75g7HwW2litghkDNgD7IMcD62ZW2VtRXB4jxIfGlZE8JQHY1hkC7tW7ewBGYhitA96+gVph+sSkh7JjNwYKeWoWbYxqemA2iJXrjwji/R1WFcQGi3zrbtpcIuC1bLm9NCrka2pw/l3SqAKZAn0TbrJglEJexSSXWeDKKMiCxMbPmxuo/Nt8m0GdPwXgPNpD0kQrYeRQdYNbA6j3W60EKcIP5wia9gniUiN0nZhoJcxMmHk1C2Dlw/riWpFtUWaaW6mz+zYJ+do0Gu6BmKkRLoCYaeGqyANpdX2zoJMEbzToid54Kttp9lik67ZkdXMGfn+gaRcoHkwwZRgqu9kyUCZHRveWQYiWLbrXbjSv13cjpa+3kUPSZg4rXEYnu/ekqhjy/BYAKUiWumqopwJse9NqEH08Bpo/XpAunAgLbdRQXzHJPZI9PoWUJedVi45NB9ntlvuKbtO9eaT7C4282GKOpyAOId9z6UHfvZEoZGgpQxdS4UeZNgRB61wr4g32cHsGKv/z9lsON93bwFYlLsDS5W69CIpBtlzuTrljz1hmLNL1EIBTdUns0rbEYQNAFWQEwRxfZtkpnauQG/MVLU9PiNs4daRdB5rp5QRxEVoue0cmry5Q40RynrUkxZqp0mZc/jV5ux9OgUiPlJ+YnoynThMP+yXGFoscaXk381ODotBxCX4EgFe2RmpLy43JAwO/+XS5oDd4rh+LATdstNiRLDSl+56QI/7xjui/awKYyvFeifXO7us0VtFzfLfT6OrukVPVnhEAR9BMG3cPoGH+LgwPw8iLR8bhfwVMvURWX+nQAAAAAElFTkSuQmCC"
+              alt="Instagram"
+            />
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABLBJREFUaEPVWYtRFEEU7IkAjACMQIzgNAI1Ao8IkAjACMQIgAiUCIQIOCNAMjgjWKtn5+b73nz2LKucKqtwdz6vu99v5wz+p2EATKnBfFQ+sZPK2fMTYReFhP6Z5Qba2vx5CUA0pjR9yDg/eWhVxZLwKgOw/wGLPbLz6IUKiB41PzTTzi9PAKwAvAFwDID/98MAmwn4BeAewAOAzWKwbiHBeAU6CcjPpKFnAN47o1WbhP0J5juAr5iBRWZlkWrfyBaKMeA9PrCbG3YI4AuAtb71EL83AM4NsJVM10I8UWCeVNEheAvZvgZAEN2jQ+EtgFOnSluQSK9uI5zh6wbOPFWP7M+5VINAmkNQIFsTaCPbZJ3s/4vB2CCIbavs1OtAcJtvqvEdvtEyQmGEID602JoB1I0g81W3qR8Sb26egcllHLPqqOvMUJ+0IN6ZrpxvD6bLkP3anBZJzPlXc3CKTDEVP1U2oQpUo1jeigH6/ZMBDvtSW2yCN5R+zKAMpie1z6+ptVjMTi9tPAij4kLmBpg+Lube4BTTbHwyZHeNOBInKK4UVeLsmEzWnkidd3Az6TZsKXrDo0dkqhBV7HCedAh9li1CGP0YuMa7jp4hkg11AGGaqIKWRp8Ac5xkiSSZlB8WGQsvYLBVKhrdki0Im72Rak72qUIitdTMnRjgsUfTSv5ViDFrmOlab7GcE4oTLIOv8y5WCuJLABct982ZEEJV2oKtNFvuBcMCOHcpOTk+Dj7+zZz7TjphwIssMULYRAB6dst2MLjDlLYzktSP+cdIAaYd0Fps7aGAZWSDCXSjUoEoMgT3H2arD8Dwtt5ZYgBFaWzH75ACyeT9FAgsawpYmaaBhj4qWG1UWQbcBQmbNX7d9Y5EXUlqfmy/yiNb2b2v4tZNG8l6P318Or4kAPcGWO38yPMqE2wBiK/kpm3f1FoQltUBa0qSRhuOUVWgAX4Hhq00e6+ecZd/WEkKDPikeQCmdtNWN62dNML6UMiCCxXF4hhT+MAoFUieMF6ELyZ7cSWNExgcREmCzJctt/6RWHSkWr5m43SkEtdOOHolNljNAOqbCG+fJVfLAMzLDHA5wVwUd9kKIr8qUNtXyLL9Grx8BsCMlQztILa5VOEgqRj93roIgHjWjOq3Yz/5rOSrLAsl4Ebycy8xRSWOWa8okLEfZopMudeFCm3X97XWRLfWMbglrYTIvj+pkXyZIn9IczQwIbvFR3jfWwLgrbuSF03VfDWefAWYMzmgVU2Kfd1MC6CpZJhgv4Nr88UsVAZT/YpFoCbaNzm+QwE//3Z3fV/zkh4FdjmbBWe+J2pTaJQU3KcAcGuAdZH0/Lmh0eoE4I3OrlsyJI3k4Hw5fBPLRKiXWFosNuK4eM3AvjHAUaUsVGOgPNAiYaXldQtVkocAuJZGi02i9UyxVIOXv6HYhRUmcbOwUIoBpkl2wOyptq1fido/dI/pQSA8mMzFvZPmmjEAMs64IhHixW2PKeVBzQCdtxWm8aaN7sV/2i85rO40lkD2+JlVCDbR7k4wTabUWO/3dY21/iyUnbUPtn3W5pBnAH9zx6YcI6xnH9axne7vigILUFWWCGcvhZqs+wN4s2dFazNfyQAAAABJRU5ErkJggg=="
+              alt="Facebook"
+            />
+          </a>
+        </li>
       </ul>
-      <label class="navbar__menu" for="hamburgerMenu">
-        <button class="navbar__menu--button" id="hamburgerMenu"></button>
-      </label>
     </nav>
     <main id="app"></main>
     <script type="module" src="./js/main.js"></script>
