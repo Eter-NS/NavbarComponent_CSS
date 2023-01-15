@@ -4,19 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../javascript.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Navbar Component</title>
   </head>
   <body>
-    <nav>
-      <figure id="logo">
+    <nav class="navbar">
+      <figure id="navbar__logo">
         <!-- <img src="" alt="Logotype" /> -->
-        <figcaption><a href="#home">Logo</a></figcaption>
+        <figcaption>
+          <a id="navbar__logo--image" href="#home">Logo</a>
+        </figcaption>
       </figure>
-      <ul>
-        <li><a href="#home">Top</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="navbar__hoverLink">
+        <li>
+          <a class="navbar__hoverLink--element" href="#home">Top</a>
+        </li>
+        <li>
+          <a class="navbar__hoverLink--element" href="#about">About me</a>
+        </li>
+        <li>
+          <a class="navbar__hoverLink--element" href="#contact">Contact</a>
+        </li>
       </ul>
+      <label class="navbar__menu" for="hamburgerMenu">
+        <button class="navbar__menu--button" id="hamburgerMenu"></button>
+      </label>
     </nav>
     <main id="app"></main>
     <script type="module" src="./js/main.js"></script>
