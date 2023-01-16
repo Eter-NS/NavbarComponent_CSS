@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   }
 
   const menu = document.querySelector(".navbar__hoverLink");
+  const button = document.querySelector("#hamburgerMenu");
 
   let mediaQueryMobile;
   checkQueries();
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     checkQueries();
   });
 
-  document.querySelector("#hamburgerMenu").addEventListener("click", (e) => {
+  button.addEventListener("click", (e) => {
     menu.classList.toggle("is-active");
     menu.ariaHidden = menu.ariaHidden === "true" ? "false" : "true";
     menu.ariaExpanded = menu.ariaExpanded === "true" ? "false" : "true";
