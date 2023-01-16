@@ -1,5 +1,3 @@
-$mainHue: 0;
-
 *,
 html,
 :root {
@@ -12,7 +10,7 @@ html,
 }
 
 body {
-  background: hsl($mainHue, 0%, 10%);
+  background: hsl(0, 0%, calc(var(--mainLightness) + 10%));
 }
 
 .navbar {
@@ -20,7 +18,7 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  background: hsl($mainHue, 0%, 15%);
+  background: hsl(0, 0%, calc(var(--mainLightness) + 15%));
   width: 100vw;
   height: 64px;
   padding: 0 10px;
@@ -37,7 +35,7 @@ body {
     #navbar__logo--image {
       font-size: 2em;
       text-decoration: none;
-      color: #dbccb6;
+      color: var(--colorValue);
     }
   }
 
@@ -48,7 +46,7 @@ body {
     column-gap: 5vw;
     align-items: center;
     list-style-type: none;
-    background: hsl($mainHue, 0%, 15%);
+    background: hsl(0, 0%, calc(var(--mainLightness) + 15%));
 
     li {
       position: relative;
@@ -80,14 +78,14 @@ body {
       height: 100%;
       border-radius: 3px;
       padding: 4px 10px;
-      background: hsl($mainHue, 0%, 15%);
-      color: rgb(238, 233, 207);
+      background: hsl(0, 0%, calc(var(--mainLightness) + 15%));
+      color: var(--colorValue);
       text-decoration: none;
       font-size: 1.5em;
       transition: background 300ms ease-in-out;
 
       &:hover {
-        background: hsl($mainHue, 0%, 20%);
+        background: hsl(0, 0%, calc(var(--mainLightness) + 20%));
       }
     }
 
@@ -104,7 +102,7 @@ body {
     width: 38px;
     height: 38px;
     padding: 7px;
-    background: hsl($mainHue, 0%, 20%);
+    background: hsl(0, 0%, calc(var(--mainLightness) + 20%));
     border-radius: 5px;
     cursor: pointer;
 
@@ -115,7 +113,7 @@ body {
       position: relative;
       width: 100%;
       height: 3px;
-      background: hsl($mainHue, 0%, 40%);
+      background: hsl(0, 0%, calc(var(--hamburgerColorLightness)));
       border: none;
       transition: background 300ms ease-in-out;
     }
@@ -128,18 +126,48 @@ body {
       left: 0;
       transform: translateY(-250%);
     }
+
     .navbar__menu--button::after {
       transform: translateY(250%);
     }
 
-    &:hover .navbar__menu--button {
-      background: rgb(238, 233, 207);
-
-      &:before,
-      &::after {
-        background: rgb(238, 233, 207);
-      }
+    &:hover {
+      background: hsl(0, 0%, calc(var(--mainLightness) + 30%));
     }
+
+    &:hover .navbar__menu--button,
+    &:hover .navbar__menu--button::before,
+    &:hover .navbar__menu--button::after {
+      // background: hsl(0, 0%, calc(var(--hamburgerColorLightness) + 10%));
+
+      background: hsl(0, 0%, calc(var(--hamburgerColorLightness) + 20%));
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mainLightness: 0% * 0;
+    --colorValue: #ffffffbd;
+
+    --hamburgerColorLightness: var(--mainLightness) + 40%;
+  }
+
+  .navbar__hoverLink--linkBio svg {
+    fill: var(--colorValue);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --mainLightness: 100% * 0.8;
+    --colorValue: #000000bd;
+
+    --hamburgerColorLightness: var(--mainLightness) * 0.5;
+  }
+
+  .navbar__hoverLink--linkBio svg {
+    fill: var(--colorValue);
   }
 }
 
@@ -161,9 +189,8 @@ body {
       top: 64px;
       right: 0;
       column-gap: 0;
-      // padding-bottom: calc((100vh - 64px) * 0.2);
       transform: translateX(100%);
-      transition: transform 500ms ease-out;
+      transition: transform 500ms ease-in-out;
 
       &[aria-expanded="true"] {
         transform: translateX(0%);
